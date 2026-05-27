@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Maiah Modeladores & Cirúrgica</title>
 
-  <meta name="description" content="Estamos preparando uma nova experiência digital para você.">
+  <meta
+    name="description"
+    content="Estamos preparando uma nova experiência digital."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+    :root {
+      --primary: #be7d6c;
+      --text: #82655d;
+      --muted: #b6968c;
+      --line: #eadcd7;
+      --whatsapp: #34c46a;
+    }
+
     body {
+
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #e7a08f 0%, #f5f3f1 55%);
+
+      background:
+        linear-gradient(
+          to bottom,
+          #e7a08f 0%,
+          #f5f3f1 55%
+        );
+
       min-height: 100vh;
+
+      color: var(--text);
+
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 30px;
-      color: #9c6d61;
+
+      padding: 40px 20px;
     }
 
     .container {
+
       width: 100%;
-      max-width: 1200px;
-      background: rgba(255,255,255,0.78);
-      backdrop-filter: blur(12px);
-      border-radius: 36px;
+      max-width: 1180px;
+
+      background: rgba(255,255,255,0.74);
+
+      backdrop-filter: blur(18px);
+
+      border: 1px solid rgba(255,255,255,0.7);
+
+      border-radius: 34px;
+
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-      border: 1px solid rgba(255,255,255,0.5);
+
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.06);
     }
 
     .content {
@@ -46,222 +83,523 @@
     }
 
     .left {
-      background: #e59a87;
-      padding: 70px 50px;
+
+      background:
+        linear-gradient(
+          180deg,
+          #e7a08f 0%,
+          #db9888 100%
+        );
+
+      padding: 80px 60px;
+
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+
       text-align: center;
     }
 
     .logo {
+
       width: 100%;
       max-width: 420px;
-      filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
-      animation: float 5s ease-in-out infinite;
+
+      animation: float 6s ease-in-out infinite;
+
+      filter:
+        drop-shadow(0 12px 30px rgba(0,0,0,0.10))
+        drop-shadow(0 0 12px rgba(255,255,255,0.14));
+
+      user-select: none;
+      -webkit-user-drag: none;
+
+      border-radius: 24px;
+
+      padding: 12px;
+
+      border: 1px solid rgba(255,255,255,0.14);
+
+      background: rgba(255,255,255,0.04);
     }
 
     @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
+
+      0%,100% {
+        transform: translateY(0);
       }
+
       50% {
         transform: translateY(-8px);
       }
+
     }
 
     .divider {
-      width: 180px;
+
+      width: 120px;
       height: 1px;
-      background: rgba(255,255,255,0.5);
-      margin: 40px 0;
+
+      background: rgba(255,255,255,0.42);
+
+      margin: 38px 0;
     }
 
     .left p {
+
+      max-width: 360px;
+
+      font-size: 16px;
+      line-height: 1.9;
+
       color: rgba(255,255,255,0.92);
-      font-size: 18px;
-      line-height: 1.8;
-      max-width: 420px;
+
+      font-weight: 300;
     }
 
     .right {
-      padding: 70px 60px;
+
+      padding: 80px 70px;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .badge {
-      display: inline-flex;
+
       width: fit-content;
-      padding: 10px 18px;
+
+      padding: 10px 16px;
+
       border-radius: 999px;
-      background: rgba(229,154,135,0.18);
-      color: #d98f7c;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 700;
+
+      background: rgba(190,125,108,0.08);
+
+      color: var(--primary);
+
+      font-size: 11px;
+      font-weight: 600;
+
       letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     h1 {
-      margin-top: 25px;
-      font-size: 48px;
-      line-height: 1.2;
-      color: #be7867;
+
+      margin-top: 24px;
+
+      font-size: 52px;
+      line-height: 1.08;
+
+      letter-spacing: -1.5px;
+
+      color: var(--primary);
+
+      font-weight: 600;
     }
 
-    .quote {
+    .subtitle {
+
       margin-top: 18px;
-      font-size: 18px;
-      color: #c78c7b;
-      font-style: italic;
+
+      font-size: 16px;
+      line-height: 1.8;
+
+      color: var(--muted);
+
+      max-width: 460px;
     }
 
     .whatsapp {
-      margin-top: 35px;
+
+      margin-top: 42px;
+
       display: flex;
-      justify-content: center;
       align-items: center;
-      text-decoration: none;
-      background: #25D366;
+      justify-content: space-between;
+
+      gap: 24px;
+
+      padding: 24px 26px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          #39cf6d 0%,
+          var(--whatsapp) 100%
+        );
+
       color: white;
-      font-weight: 600;
-      padding: 18px 24px;
-      border-radius: 20px;
-      transition: 0.3s ease;
-      box-shadow: 0 10px 25px rgba(37,211,102,0.35);
+
+      border: 1px solid rgba(255,255,255,0.16);
+
+      box-shadow:
+        0 14px 34px rgba(52,196,106,0.20);
     }
 
-    .whatsapp:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(37,211,102,0.45);
+    .whatsapp-content {
+      flex: 1;
+      min-width: 0;
     }
 
-    .cards {
-      margin-top: 35px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+    .whatsapp-label {
 
-    .card {
-      text-decoration: none;
-      background: rgba(255,255,255,0.82);
-      border: 1px solid #eed7d0;
-      padding: 22px;
-      border-radius: 20px;
-      transition: 0.3s ease;
-      color: inherit;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-      border-color: #e2b5a9;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-    }
-
-    .card-title {
       font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #d8a091;
+      font-weight: 600;
+
+      letter-spacing: 1px;
+
+      opacity: 0.95;
     }
 
-    .card-text {
+    .whatsapp-number {
+
+      margin-top: 4px;
+
+      font-size: 24px;
+      font-weight: 600;
+
+      letter-spacing: -0.5px;
+
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    .whatsapp-button {
+
+      flex-shrink: 0;
+
+      text-decoration: none;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 130px;
+
+      padding: 13px 18px;
+
+      border-radius: 14px;
+
+      background: rgba(255,255,255,0.16);
+
+      border: 1px solid rgba(255,255,255,0.18);
+
+      color: white;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition: 0.22s ease;
+    }
+
+    .whatsapp-button:hover {
+
+      background: rgba(255,255,255,0.22);
+
+      transform: translateX(2px);
+    }
+
+    .contact-list {
+      margin-top: 42px;
+    }
+
+    .contact-item {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 24px;
+
+      padding: 24px 0;
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-item:first-child {
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .contact-title {
+
+      font-size: 13px;
+      font-weight: 600;
+
+      color: var(--primary);
+    }
+
+    .contact-text {
+
       margin-top: 6px;
+
       font-size: 16px;
-      font-weight: 500;
-      color: #9c6d61;
+      font-weight: 400;
+
+      color: var(--text);
+
       word-break: break-word;
+
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    .contact-button {
+
+      flex-shrink: 0;
+
+      text-decoration: none;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 118px;
+
+      padding: 12px 18px;
+
+      border-radius: 14px;
+
+      background: rgba(190,125,108,0.08);
+
+      border: 1px solid rgba(190,125,108,0.12);
+
+      color: var(--primary);
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition: 0.22s ease;
+    }
+
+    .contact-button:hover {
+
+      background: rgba(190,125,108,0.14);
+
+      transform: translateX(2px);
     }
 
     footer {
-      margin-top: 40px;
-      padding-top: 25px;
-      border-top: 1px solid #e7d0c9;
-      font-size: 14px;
-      color: #c89b8e;
+
+      margin-top: 42px;
+
+      font-size: 13px;
+
+      color: #b9a29b;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 920px) {
+
       .content {
         grid-template-columns: 1fr;
       }
 
       .left,
       .right {
-        padding: 50px 30px;
+        padding: 55px 32px;
       }
 
       h1 {
-        font-size: 38px;
+        font-size: 40px;
       }
 
       body {
-        padding: 15px;
+        padding: 16px;
       }
+
+      .contact-item,
+      .whatsapp {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-button,
+      .whatsapp-button {
+        width: 100%;
+      }
+
     }
+
   </style>
+
 </head>
 <body>
+
   <div class="container">
+
     <div class="content">
+
       <div class="left">
-        <img src="logo-maiah.png" alt="Maiah Modeladores & Cirúrgica" class="logo">
+
+        <img
+          src="logo-maiah.png"
+          alt="Maiah Modeladores & Cirúrgica"
+          class="logo"
+          draggable="false"
+        >
 
         <div class="divider"></div>
 
         <p>
-          Estamos preparando uma nova experiência digital com mais elegância,
-          modernidade e praticidade para você.
+          Estamos preparando uma nova experiência digital com mais elegância, sofisticação e praticidade.
         </p>
+
       </div>
 
       <div class="right">
-        <div class="badge">Site em manutenção</div>
 
-        <h1>Em breve uma nova experiência.</h1>
-
-        <div class="quote">
-          “Excelência em qualidade, saúde e bem estar”
+        <div class="badge">
+          Site em manutenção
         </div>
 
-        <a class="whatsapp" href="https://wa.me/5514996864751" target="_blank">
-          WhatsApp • (14) 99686-4751
-        </a>
+        <h1>
+          Em breve uma nova experiência.
+        </h1>
 
-        <div class="cards">
-          <a class="card" href="tel:+551432029308">
-            <div class="card-title">Telefone</div>
-            <div class="card-text">(14) 3202-9308</div>
-          </a>
+        <div class="subtitle">
+          Excelência em qualidade, saúde e bem-estar.
+        </div>
 
-          <a class="card" href="https://instagram.com/MaiahModeladores" target="_blank">
-            <div class="card-title">Instagram</div>
-            <div class="card-text">@MaiahModeladores</div>
-          </a>
+        <div class="whatsapp">
 
-          <a class="card" href="mailto:contato@maiahmodeladores.com.br">
-            <div class="card-title">E-mail</div>
-            <div class="card-text">contato@maiahmodeladores.com.br</div>
-          </a>
+          <div class="whatsapp-content">
 
-          <a class="card" href="https://maps.google.com/?q=Rua+Joaquim+da+Silva+Martha+12-22+Bauru+SP" target="_blank">
-            <div class="card-title">Endereço</div>
-            <div class="card-text">
-              Rua Joaquim da Silva Martha, n. 12-22 • Altos da Cidade • Bauru/SP
+            <div class="whatsapp-label">
+              💬 WhatsApp
             </div>
+
+            <div class="whatsapp-number">
+              (14) 99686-4751
+            </div>
+
+          </div>
+
+          <a
+            class="whatsapp-button"
+            href="https://wa.me/5514996864751"
+            target="_blank"
+          >
+            Conversar →
           </a>
+
+        </div>
+
+        <div class="contact-list">
+
+          <div class="contact-item">
+
+            <div class="contact-info">
+
+              <div class="contact-title">
+                📞 Telefone
+              </div>
+
+              <div class="contact-text">
+                (14) 3202-9308
+              </div>
+
+            </div>
+
+            <a
+              class="contact-button"
+              href="tel:+551432029308"
+            >
+              Ligar →
+            </a>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-info">
+
+              <div class="contact-title">
+                📸 Instagram
+              </div>
+
+              <div class="contact-text">
+                @MaiahModeladores
+              </div>
+
+            </div>
+
+            <a
+              class="contact-button"
+              href="https://instagram.com/MaiahModeladores"
+              target="_blank"
+            >
+              Abrir →
+            </a>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-info">
+
+              <div class="contact-title">
+                ✉️ E-mail
+              </div>
+
+              <div class="contact-text">
+                contato@maiahmodeladores.com.br
+              </div>
+
+            </div>
+
+            <a
+              class="contact-button"
+              href="mailto:contato@maiahmodeladores.com.br"
+            >
+              Enviar →
+            </a>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-info">
+
+              <div class="contact-title">
+                📍 Localização
+              </div>
+
+              <div class="contact-text">
+                Rua Joaquim da Silva Martha • Altos da Cidade • Bauru/SP
+              </div>
+
+            </div>
+
+            <a
+              class="contact-button"
+              href="https://maps.google.com/?q=Rua+Joaquim+da+Silva+Martha+12-22+Bauru+SP"
+              target="_blank"
+            >
+              Ver mapa →
+            </a>
+
+          </div>
+
         </div>
 
         <footer>
-          © 2026 Maiah Modeladores & Cirúrgica • Todos os direitos reservados
+          © 2026 Maiah Modeladores & Cirúrgica
         </footer>
+
       </div>
+
     </div>
+
   </div>
+
 </body>
 </html>
