@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maiah Modeladores & Cirúrgica</title>
+
+  <meta name="description" content="Estamos preparando uma nova experiência digital para você.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #e7a08f 0%, #f5f3f1 55%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      color: #9c6d61;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      background: rgba(255,255,255,0.78);
+      backdrop-filter: blur(12px);
+      border-radius: 36px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .left {
+      background: #e59a87;
+      padding: 70px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 420px;
+      filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .divider {
+      width: 180px;
+      height: 1px;
+      background: rgba(255,255,255,0.5);
+      margin: 40px 0;
+    }
+
+    .left p {
+      color: rgba(255,255,255,0.92);
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 420px;
+    }
+
+    .right {
+      padding: 70px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      width: fit-content;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(229,154,135,0.18);
+      color: #d98f7c;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      margin-top: 25px;
+      font-size: 48px;
+      line-height: 1.2;
+      color: #be7867;
+    }
+
+    .quote {
+      margin-top: 18px;
+      font-size: 18px;
+      color: #c78c7b;
+      font-style: italic;
+    }
+
+    .whatsapp {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      background: #25D366;
+      color: white;
+      font-weight: 600;
+      padding: 18px 24px;
+      border-radius: 20px;
+      transition: 0.3s ease;
+      box-shadow: 0 10px 25px rgba(37,211,102,0.35);
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(37,211,102,0.45);
+    }
+
+    .cards {
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      text-decoration: none;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid #eed7d0;
+      padding: 22px;
+      border-radius: 20px;
+      transition: 0.3s ease;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #e2b5a9;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .card-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #d8a091;
+    }
+
+    .card-text {
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #9c6d61;
+      word-break: break-word;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 25px;
+      border-top: 1px solid #e7d0c9;
+      font-size: 14px;
+      color: #c89b8e;
+    }
+
+    @media (max-width: 900px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .left,
+      .right {
+        padding: 50px 30px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      body {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left">
+        <img src="logo-maiah.png" alt="Maiah Modeladores & Cirúrgica" class="logo">
+
+        <div class="divider"></div>
+
+        <p>
+          Estamos preparando uma nova experiência digital com mais elegância,
+          modernidade e praticidade para você.
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="badge">Site em manutenção</div>
+
+        <h1>Em breve uma nova experiência.</h1>
+
+        <div class="quote">
+          “Excelência em qualidade, saúde e bem estar”
+        </div>
+
+        <a class="whatsapp" href="https://wa.me/5514996864751" target="_blank">
+          WhatsApp • (14) 99686-4751
+        </a>
+
+        <div class="cards">
+          <a class="card" href="tel:+551432029308">
+            <div class="card-title">Telefone</div>
+            <div class="card-text">(14) 3202-9308</div>
+          </a>
+
+          <a class="card" href="https://instagram.com/MaiahModeladores" target="_blank">
+            <div class="card-title">Instagram</div>
+            <div class="card-text">@MaiahModeladores</div>
+          </a>
+
+          <a class="card" href="mailto:contato@maiahmodeladores.com.br">
+            <div class="card-title">E-mail</div>
+            <div class="card-text">contato@maiahmodeladores.com.br</div>
+          </a>
+
+          <a class="card" href="https://maps.google.com/?q=Rua+Joaquim+da+Silva+Martha+12-22+Bauru+SP" target="_blank">
+            <div class="card-title">Endereço</div>
+            <div class="card-text">
+              Rua Joaquim da Silva Martha, n. 12-22 • Altos da Cidade • Bauru/SP
+            </div>
+          </a>
+        </div>
+
+        <footer>
+          © 2026 Maiah Modeladores & Cirúrgica • Todos os direitos reservados
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
